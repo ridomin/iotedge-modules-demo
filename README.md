@@ -36,7 +36,7 @@ docker run -it --rm \
 
 ## Create two modules using the dotnet template
 
-```terminal
+```bash
 dotnet new install Microsoft.Azure.IoT.Edge.Module
 dotnet new aziotedgemodule -o ModuleA
 dotnet new aziotedgemodule -o ModuleB

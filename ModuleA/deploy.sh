@@ -1,1 +1,4 @@
- aziotedge-modinit --ConnectionStrings:IoTEdge="HostName=tests.azure-devices.net;DeviceId=curly-potato;SharedAccessKey=pYiJ5I/kaZh4bmM49YPc4g2qi5GAUZW6TC+eKggi9UI=" --moduleId=ModuleA
+source ../.env
+connStr=$(az iot hub device-identity connection-string show -n $HUB_ID -d $EDGE_ID --query connectionString -o tsv)
+echo $connStr
+aziotedge-modinit --ConnectionStrings:IoTEdge="$connStr" --moduleId=ModuleA
