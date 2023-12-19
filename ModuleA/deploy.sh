@@ -1,0 +1,1 @@
+ aziotedge-modinit --ConnectionStrings:IoTEdge="HostName=tests.azure-devices.net;DeviceId=curly-potato;SharedAccessKey=pYiJ5I/kaZh4bmM49YPc4g2qi5GAUZW6TC+eKggi9UI=" --moduleId=ModuleA
